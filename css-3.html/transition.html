@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            border: 2px solid tomato;
+            background: peachpuff;
+            /* transition: width 5s ,background-color 5s; */
+            transition: transform 2s, background-color 3s;
+
+        }
+        .box:hover{
+            transform: rotate(45deg) scale(1.5) translatex(150px);
+            /* width: 400px; */
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- transition maximum-value 4 and minimum value 2 
+     1)property name
+     2)duration
+     3)easing-function
+     4)delay
+     -->
+    <div class="box">box-1</div>
+    <div class="box">box-2</div>
+    <div class="box">box-3</div>
+</body>
+</html>
